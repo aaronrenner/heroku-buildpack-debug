@@ -7,8 +7,13 @@ echo "Cache dir: $2"
 echo "ENV"
 env
 
-echo "Build dir contents"
-ls -R $1
+echo $PWD
 
-echo "Cache dir contents"
-ls -R $2
+cd $1
+git status
+
+# echo "Build dir contents"
+# ls -R $1
+
+# echo "Cache dir contents"
+# ls -R $2
